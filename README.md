@@ -92,8 +92,11 @@ export class UserController {
 ```
 
 3. Run and test it!
+
 Swagger schema:
-[image]()
+
+<img src="https://user-images.githubusercontent.com/24193020/185786645-2df766be-e868-41d4-b490-989d9eca31de.jpg" width="300" />
+
 
 Response:
 ```json
@@ -127,9 +130,12 @@ Response:
 Try casting the return value to the dto type:
 ```typescript
 // controller...
-findMany(): UserDto[] {
-  // findMany returns UserModel[]
-  return this.userService.findMany() as UserDto[];
+export class UserController {
+  // ...
+  findMany(): UserDto[] {
+    // findMany returns UserModel[]
+    return this.userService.findMany() as UserDto[];
+  }
 }
 ```
 
