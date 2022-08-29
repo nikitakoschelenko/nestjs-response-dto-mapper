@@ -127,6 +127,7 @@ Response:
 
 ## Troubleshooting
 > I use the @nestjs/swagger CLI Plugin and my method returns an array of objects, but the swagger does not display the method summary and response schema
+
 Try casting the return value to the dto type:
 ```typescript
 // controller...
